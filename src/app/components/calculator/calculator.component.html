@@ -1,0 +1,28 @@
+<div class="calculator">
+    <input type="text" class="input-field" [value]="currentNumber">
+
+    <div class="keys">
+        <button type="button" (click)="getOperator('+')" class="operator" value="+">+</button>
+        <button type="button" (click)="getOperator('-')" class="operator" value="-">-</button>
+        <button type="button" (click)="getOperator('*')" class="operator" value="*">&times;</button>
+        <button type="button" (click)="getOperator('/')" class="operator" value="/">&divide;</button>
+    
+        <button type="button" (click)="getNumber('7')" class="operator" value="7">7</button>
+        <button type="button" (click)="getNumber('8')" class="operator" value="8">8</button>
+        <button type="button" (click)="getNumber('9')" class="operator" value="9">9</button>
+
+        <button type="button" (click)="getNumber('4')" class="operator" value="4">4</button>
+        <button type="button" (click)="getNumber('5')" class="operator" value="5">5</button>
+        <button type="button" (click)="getNumber('6')" class="operator" value="6">6</button>
+
+        <button type="button" (click)="getNumber('1')" class="operator" value="1">1</button>
+        <button type="button" (click)="getNumber('2')" class="operator" value="2">2</button>
+        <button type="button" (click)="getNumber('3')" class="operator" value="3">3</button>
+        
+        <button type="button" (click)="getNumber('0')" class="operator" value="0">0</button>
+        <button type="button" (click)="getNumber('.')" class="operator" value="decimal">.</button>
+        <button type="button" (click)="getNumber('all-clear')" class="operator" value="all-clear">AC</button>
+
+        <button type="button" (click)="getOperator('=')" class="equal-sign" value="=">=</button>
+    </div>
+</div>
